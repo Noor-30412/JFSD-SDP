@@ -359,12 +359,7 @@ body {
 }
 
 /*header section*/
-.hero_area {
-  height: 100vh;
-  background-color: #b5caee;
-  background-image: url(../images/cool-background3.svg);
-  background-size: cover;
-}
+
 
 .sub_page .hero_area {
   height: auto;

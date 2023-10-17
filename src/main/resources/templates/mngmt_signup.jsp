@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Student SignUp</title>
+    <title>Management SignUp</title>
     
     <style>
         html {
             height: 100%;
         }
         body {
-        	background-image:url('images/loginstud.png');
+        	background-image:url('images/mngmtlogin.png');
            background-size: cover;
             min-height: 100vh;
             width: 100%;
@@ -20,22 +20,6 @@
             margin: 0; /* Added to remove any default margin */
             font-family: sans-serif; /* Added to set a font-family */
         }
-        
-        /* Add the CSS for the submit button here */
-        input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-   
 
         .login-box {
             position: absolute;
@@ -93,8 +77,6 @@
             transition: .5s;
         }
 
-
-		
         .login-box .user-box input:focus ~ label,
         .login-box .user-box input:valid ~ label {
             top: -20px;
@@ -216,25 +198,31 @@
                 <img src="	https://cdn-icons-png.flaticon.com/128/3294/3294850.png" alt="Login Logo" width="64" height="64">
             </div>
             <h2>Register</h2>
-            <form action = "signup_success" th:obj="${stud2} ">
+            <form>
                 <div class="user-box">
-                    <input type="text" id="id" name="id" required>
-                    <label>Id No:</label>
+                    <input type="text" name="" required="">
+                    <label>Employee Id</label>
                 </div>
                 <div class="user-box">
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" name="" required="">
                     <label>Name</label>
                 </div>
                 <div class="user-box">
-                    <input type="text" id="email" name="email" required>
+                    <input type="text" name="" required="">
                     <label>Email:</label>
                 </div>
                 <div class="user-box">
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" name="" required="">
                     <label>Password</label>
                 </div>
-                <input type="submit" value="SignUp">
-                <a href="login">
+                <a href="mngmt_signup">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    SignUp
+                </a>
+                <a href="mngmt_login">
                     <span></span>
                     <span></span>
                     <span></span>

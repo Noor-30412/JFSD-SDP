@@ -1,48 +1,70 @@
-<!DOCTYPE html>
-<html>
-
 <head>
- <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href="css/style1.css" rel="stylesheet" />
+    <style>
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
 
-  <title>GrieveEase</title>
+        .dropdown__button {
+            background-color: #20c997;
+            padding: 0.5rem 1rem;
+            color: #000;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 500;
+            letter-spacing: .2rem;
+            cursor: pointer;
+        }
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        .dropdown__content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 252px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+        .dropdown:hover .dropdown__content {
+            display: block;
+        }
 
-  <!-- Custom styles for this template -->
-  <link href="css/style1.css" rel="stylesheet" />
-  
-  <!-- Owl Carousel CSS (You may need to download it locally) -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        .dropdown__content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #000; /* Change color to blue */
+        }
+
+        .dropdown__content a:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-
 <body>
-
-<header>
+    <header>
         <nav class="navbar">
-            <a href="home" class="navbar__logo"><img src="https://cdn-icons-png.flaticon.com/128/4530/4530886.png" alt="Logo" width="50" height="50"></a>
+            <a href="mngmt_home" class="navbar__logo"><img src="https://cdn-icons-png.flaticon.com/128/4530/4530886.png" alt="Logo" width="50" height="50"></a>
             <ul>
-                <li><a href="home"><img src="https://cdn-icons-png.flaticon.com/128/609/609803.png" alt="Logo" width="30" height="26">Home</a></li>
-                <li><a href="about"><img src="	https://cdn-icons-png.flaticon.com/128/3815/3815602.png" alt="Logo" width="30" height="30">About</a></li>
-                <li><a href="contactus"><img src="https://cdn-icons-png.flaticon.com/128/2706/2706950.png" alt="Logo" width="30" height="30">Contact</a></li>
-                
+                <li><a href="mngmt_home"><img src="https://cdn-icons-png.flaticon.com/128/609/609803.png" alt="Logo" width="30" height="26">Home</a></li>
+                <li><a href="mngmt_about"><img src="https://cdn-icons-png.flaticon.com/128/3815/3815602.png" alt="Logo" width="30" height="30">About</a></li>
+                <li><a href="mngmt_contactus"><img src="https://cdn-icons-png.flaticon.com/128/2706/2706950.png" alt="Logo" width="30" height="30">Contact</a></li>
+                <li><a href="mngmt_grievances"><img src="https://cdn-icons-png.flaticon.com/128/4306/4306892.png" alt="Logo" width="30" height="30">Grievances</a></li>
                 <li class="cta__button dropdown">
-                    <a href="#" class="dropdown__button"><img src="	https://cdn-icons-png.flaticon.com/128/2250/2250207.png" alt="Logo" width="30" height="26">Login/SignUp As</a>
+                    <a href="#" class="dropdown__button"><img src="https://cdn-icons-png.flaticon.com/128/1993/1993150.png" alt="Logo" width="30" height="30">Profile</a>
                     <div class="dropdown__content">
-                        <a href="signup"><img src="https://cdn-icons-png.flaticon.com/128/3135/3135810.png" alt="Logo" width="30" height="30">Student</a>
-                        <a href="fac_login"><img src="	https://cdn-icons-png.flaticon.com/128/5352/5352126.png" alt="Logo" width="30" height="30">Faculty</a>
-                        <a href="mngmt_login"><img src="	https://cdn-icons-png.flaticon.com/128/3273/3273070.png" alt="Logo" width="30" height="30">Management</a>
+                        <a href="mngmt_profile"><img src="https://cdn-icons-png.flaticon.com/128/1993/1993150.png" alt="Logo" width="30" height="30">Profile</a>
+                        <a href="mngmt_notify"><img src="https://cdn-icons-png.flaticon.com/128/2058/2058148.png" alt="Logo" width="30" height="30">Notifications</a>
+                        <a href="home"><img src="	https://cdn-icons-png.flaticon.com/128/1574/1574351.png" alt="Logo" width="30" height="30">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -51,8 +73,8 @@
             </button>
         </nav>
     </header>
-
-  <div class="hero_area">
+    
+     <div class="hero_area">
     <!-- header section strats -->
 
 
@@ -228,7 +250,7 @@
              We are a dedicated team of three individuals passionately working on the development of "GrieveEase," a groundbreaking project that aims to revolutionize the field of grievance management systems. Our collective expertise and commitment to addressing the challenges associated with handling grievances make us a formidable force in this domain.
             </p>
             <div>
-              <a href="about">
+              <a href="mngmt_about">
                 Read More
               </a>
             </div>

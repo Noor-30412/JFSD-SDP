@@ -299,16 +299,16 @@
         <nav class="navbar">
             <a href="#" class="navbar__logo">Logo</a>
             <ul>
-                <li><a href="index.jsp">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
                 
                 <li class="cta__button dropdown">
                     <a href="#" class="dropdown__button">Login/SignUp As</a>
                     <div class="dropdown__content">
                         <a href="login.jsp">Student</a>
                         <a href="fac_login.jsp">Faculty</a>
-                        <a href="#">Management</a>
+                        <a href="mngmt_login.jsp">Management</a>
                     </div>
                 </li>
             </ul>
